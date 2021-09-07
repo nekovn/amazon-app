@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import shortid from "shortid";
 
 // const reviewSchema = new mongoose.Schema(
 //   {
@@ -14,7 +13,6 @@ import shortid from "shortid";
 
 const productSchema = new mongoose.Schema(
   {
-    _id: { type: String, default: shortid.generate },
     name: { type: String, required: true, unique: true },
     image: { type: String, required: true },
     brand: { type: String, required: true },
